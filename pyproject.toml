@@ -1,0 +1,30 @@
+[project]
+name = "pai-llm"
+version = "0.2.4"
+description = "PAI LLM"
+authors = [
+    { name = "hzr", email = "hzr@pai.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "aiosqlite>=0.21.0",
+    "commons-lang>=0.2.1",
+    "langchain>=0.3.23",
+    "langchain-openai>=0.3.14",
+    "loguru>=0.7.3",
+    "mysql-connector-python>=9.3.0",
+    "openai>=1.75.0",
+    "pydantic>=2.11.3",
+    "pytest>=8.3.5",
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple"
+priority = "primary"

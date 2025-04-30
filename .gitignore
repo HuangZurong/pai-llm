@@ -1,0 +1,6 @@
+.venv
+.idea
+.pytest_cache
+dist
+build
+temp
